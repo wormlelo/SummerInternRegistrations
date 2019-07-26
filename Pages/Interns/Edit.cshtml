@@ -1,0 +1,175 @@
+﻿@page
+@model SummerInternRegistrations.Pages.Interns.EditModel
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<h1>Edit</h1>
+
+<h4>Intern</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form method="post">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="Intern.ID" />
+            <div class="form-group">
+                <label asp-for="Intern.PREFIX" class="control-label"></label>
+                <input asp-for="Intern.PREFIX" class="form-control" />
+                <span asp-validation-for="Intern.PREFIX" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Intern.FNAME" class="control-label"></label>
+                <input asp-for="Intern.FNAME" class="form-control" />
+                <span asp-validation-for="Intern.FNAME" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Intern.PMNAME" class="control-label"></label>
+                <input asp-for="Intern.PMNAME" class="form-control" />
+                <span asp-validation-for="Intern.PMNAME" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Intern.LNAME" class="control-label"></label>
+                <input asp-for="Intern.LNAME" class="form-control" />
+                <span asp-validation-for="Intern.LNAME" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Intern.SUFFIX" class="control-label"></label>
+                <input asp-for="Intern.SUFFIX" class="form-control" />
+                <span asp-validation-for="Intern.SUFFIX" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Intern.EMAIL1" class="control-label"></label>
+                <input asp-for="Intern.EMAIL1" class="form-control" />
+                <span asp-validation-for="Intern.EMAIL1" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Intern.MOBILE" class="control-label"></label>
+                <input asp-for="Intern.MOBILE" class="form-control" />
+                <span asp-validation-for="Intern.MOBILE" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Intern.MAJOR" class="control-label"></label>
+                <input asp-for="Intern.MAJOR" class="form-control" />
+                <span asp-validation-for="Intern.MAJOR" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Intern.CLASSIFICATION" class="control-label"></label>
+                <input asp-for="Intern.CLASSIFICATION" class="form-control" />
+                <span asp-validation-for="Intern.CLASSIFICATION" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Intern.GPA" class="control-label"></label>
+                <input asp-for="Intern.GPA" class="form-control" />
+                <span asp-validation-for="Intern.GPA" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Intern.COLLEGECREDIT" class="control-label"></label>
+                <input asp-for="Intern.COLLEGECREDIT" class="form-control" />
+                <span asp-validation-for="Intern.COLLEGECREDIT" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Intern.SEMESTERTERM" class="control-label"></label>
+                <input asp-for="Intern.SEMESTERTERM" class="form-control" />
+                <span asp-validation-for="Intern.SEMESTERTERM" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Intern.SEMESTERYEAR" class="control-label"></label>
+                <input asp-for="Intern.SEMESTERYEAR" class="form-control" />
+                <span asp-validation-for="Intern.SEMESTERYEAR" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Intern.ACADEMICCREDITSEMESTER" class="control-label"></label>
+                <input asp-for="Intern.ACADEMICCREDITSEMESTER" class="form-control" />
+                <span asp-validation-for="Intern.ACADEMICCREDITSEMESTER" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Intern.PACADEMICCREDITYEAR" class="control-label"></label>
+                <input asp-for="Intern.PACADEMICCREDITYEAR" class="form-control" />
+                <span asp-validation-for="Intern.PACADEMICCREDITYEAR" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Intern.COLLEGEGRADUATIONSEMESTER" class="control-label"></label>
+                <input asp-for="Intern.COLLEGEGRADUATIONSEMESTER" class="form-control" />
+                <span asp-validation-for="Intern.COLLEGEGRADUATIONSEMESTER" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Intern.COLLEGEGRADUATIONYEAR" class="control-label"></label>
+                <input asp-for="Intern.COLLEGEGRADUATIONYEAR" class="form-control" />
+                <span asp-validation-for="Intern.COLLEGEGRADUATIONYEAR" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Intern.FNAMEPROF" class="control-label"></label>
+                <input asp-for="Intern.FNAMEPROF" class="form-control" />
+                <span asp-validation-for="Intern.FNAMEPROF" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Intern.LNAMEPROF" class="control-label"></label>
+                <input asp-for="Intern.LNAMEPROF" class="form-control" />
+                <span asp-validation-for="Intern.LNAMEPROF" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Intern.PREFEREDSITE" class="control-label"></label>
+                <input asp-for="Intern.PREFEREDSITE" class="form-control" />
+                <span asp-validation-for="Intern.PREFEREDSITE" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Intern.DRUGSCREEN" class="control-label"></label>
+                <input asp-for="Intern.DRUGSCREEN" class="form-control" />
+                <span asp-validation-for="Intern.DRUGSCREEN" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Intern.BACKGROUNDCHECK" class="control-label"></label>
+                <input asp-for="Intern.BACKGROUNDCHECK" class="form-control" />
+                <span asp-validation-for="Intern.BACKGROUNDCHECK" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Intern.FIRSTEXPERIENCE" class="control-label"></label>
+                <input asp-for="Intern.FIRSTEXPERIENCE" class="form-control" />
+                <span asp-validation-for="Intern.FIRSTEXPERIENCE" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Intern.LOCATIONOUTSIDEGA" class="control-label"></label>
+                <input asp-for="Intern.LOCATIONOUTSIDEGA" class="form-control" />
+                <span asp-validation-for="Intern.LOCATIONOUTSIDEGA" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Intern.LOCATIONLODGING" class="control-label"></label>
+                <input asp-for="Intern.LOCATIONLODGING" class="form-control" />
+                <span asp-validation-for="Intern.LOCATIONLODGING" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Intern.INTERNSHIPPREP" class="control-label"></label>
+                <input asp-for="Intern.INTERNSHIPPREP" class="form-control" />
+                <span asp-validation-for="Intern.INTERNSHIPPREP" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Intern.EDITOR" class="control-label"></label>
+                <input asp-for="Intern.EDITOR" class="form-control" />
+                <span asp-validation-for="Intern.EDITOR" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Intern.NOTES" class="control-label"></label>
+                <input asp-for="Intern.NOTES" class="form-control" />
+                <span asp-validation-for="Intern.NOTES" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Intern.TIMESTAMP" class="control-label"></label>
+                <input asp-for="Intern.TIMESTAMP" class="form-control" />
+                <span asp-validation-for="Intern.TIMESTAMP" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-page="./Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

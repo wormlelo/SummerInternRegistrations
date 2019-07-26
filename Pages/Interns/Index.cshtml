@@ -1,0 +1,207 @@
+﻿@page
+@model SummerInternRegistrations.Pages.Interns.IndexModel
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-page="Create">Create New</a>
+</p>
+<div class="1container">
+    <table class="table">
+        <thead>
+            <tr>
+                <th>
+                    @Html.DisplayNameFor(model => model.Intern[0].PREFIX)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Intern[0].FNAME)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Intern[0].PMNAME)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Intern[0].LNAME)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Intern[0].SUFFIX)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Intern[0].EMAIL1)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Intern[0].MOBILE)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Intern[0].MAJOR)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Intern[0].CLASSIFICATION)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Intern[0].GPA)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Intern[0].COLLEGECREDIT)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Intern[0].SEMESTERTERM)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Intern[0].SEMESTERYEAR)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Intern[0].ACADEMICCREDITSEMESTER)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Intern[0].PACADEMICCREDITYEAR)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Intern[0].COLLEGEGRADUATIONSEMESTER)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Intern[0].COLLEGEGRADUATIONYEAR)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Intern[0].FNAMEPROF)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Intern[0].LNAMEPROF)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Intern[0].PREFEREDSITE)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Intern[0].DRUGSCREEN)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Intern[0].BACKGROUNDCHECK)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Intern[0].FIRSTEXPERIENCE)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Intern[0].LOCATIONOUTSIDEGA)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Intern[0].LOCATIONLODGING)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Intern[0].INTERNSHIPPREP)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Intern[0].EDITOR)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Intern[0].NOTES)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Intern[0].TIMESTAMP)
+                </th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model.Intern)
+            {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.PREFIX)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.FNAME)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.PMNAME)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.LNAME)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.SUFFIX)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.EMAIL1)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.MOBILE)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.MAJOR)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.CLASSIFICATION)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.GPA)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.COLLEGECREDIT)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.SEMESTERTERM)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.SEMESTERYEAR)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.ACADEMICCREDITSEMESTER)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.PACADEMICCREDITYEAR)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.COLLEGEGRADUATIONSEMESTER)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.COLLEGEGRADUATIONYEAR)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.FNAMEPROF)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.LNAMEPROF)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.PREFEREDSITE)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.DRUGSCREEN)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.BACKGROUNDCHECK)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.FIRSTEXPERIENCE)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.LOCATIONOUTSIDEGA)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.LOCATIONLODGING)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.INTERNSHIPPREP)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.EDITOR)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.NOTES)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.TIMESTAMP)
+                    </td>
+                    <td>
+                        <a asp-page="./Edit" asp-route-id="@item.ID">Edit</a> |
+                        <a asp-page="./Details" asp-route-id="@item.ID">Details</a> |
+                        <a asp-page="./Delete" asp-route-id="@item.ID">Delete</a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>

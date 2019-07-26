@@ -1,0 +1,196 @@
+﻿@page
+@model SummerInternRegistrations.Pages.Interns.DeleteModel
+
+@{
+    ViewData["Title"] = "Delete";
+}
+
+<h1>Delete</h1>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>Intern</h4>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Intern.PREFIX)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Intern.PREFIX)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Intern.FNAME)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Intern.FNAME)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Intern.PMNAME)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Intern.PMNAME)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Intern.LNAME)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Intern.LNAME)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Intern.SUFFIX)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Intern.SUFFIX)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Intern.EMAIL1)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Intern.EMAIL1)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Intern.MOBILE)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Intern.MOBILE)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Intern.MAJOR)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Intern.MAJOR)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Intern.CLASSIFICATION)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Intern.CLASSIFICATION)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Intern.GPA)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Intern.GPA)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Intern.COLLEGECREDIT)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Intern.COLLEGECREDIT)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Intern.SEMESTERTERM)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Intern.SEMESTERTERM)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Intern.SEMESTERYEAR)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Intern.SEMESTERYEAR)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Intern.ACADEMICCREDITSEMESTER)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Intern.ACADEMICCREDITSEMESTER)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Intern.PACADEMICCREDITYEAR)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Intern.PACADEMICCREDITYEAR)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Intern.COLLEGEGRADUATIONSEMESTER)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Intern.COLLEGEGRADUATIONSEMESTER)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Intern.COLLEGEGRADUATIONYEAR)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Intern.COLLEGEGRADUATIONYEAR)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Intern.FNAMEPROF)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Intern.FNAMEPROF)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Intern.LNAMEPROF)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Intern.LNAMEPROF)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Intern.PREFEREDSITE)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Intern.PREFEREDSITE)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Intern.DRUGSCREEN)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Intern.DRUGSCREEN)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Intern.BACKGROUNDCHECK)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Intern.BACKGROUNDCHECK)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Intern.FIRSTEXPERIENCE)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Intern.FIRSTEXPERIENCE)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Intern.LOCATIONOUTSIDEGA)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Intern.LOCATIONOUTSIDEGA)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Intern.LOCATIONLODGING)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Intern.LOCATIONLODGING)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Intern.INTERNSHIPPREP)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Intern.INTERNSHIPPREP)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Intern.EDITOR)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Intern.EDITOR)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Intern.NOTES)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Intern.NOTES)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Intern.TIMESTAMP)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Intern.TIMESTAMP)
+        </dd>
+    </dl>
+    
+    <form method="post">
+        <input type="hidden" asp-for="Intern.ID" />
+        <input type="submit" value="Delete" class="btn btn-danger" /> |
+        <a asp-page="./Index">Back to List</a>
+    </form>
+</div>
