@@ -1,5 +1,7 @@
-﻿using System;
+﻿using Microsoft.AspNetCore.Mvc.Rendering;
+using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Threading.Tasks;
 
@@ -19,10 +21,13 @@ namespace SummerInternRegistration.Models
         public string CLASSIFICATION { get; set; }
         public double GPA { get; set; }
         public string COLLEGECREDIT { get; set; }
+
+
+
         public string SEMESTERTERM { get; set; }
         public string SEMESTERYEAR { get; set; }
         public string ACADEMICCREDITSEMESTER { get; set; }
-        public string PACADEMICCREDITYEAR { get; set; }
+        public string ACADEMICCREDITYEAR { get; set; }
         public string COLLEGEGRADUATIONSEMESTER { get; set; }
         public string COLLEGEGRADUATIONYEAR { get; set; }
         public string FNAMEPROF { get; set; }

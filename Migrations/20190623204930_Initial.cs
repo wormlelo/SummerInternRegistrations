@@ -27,7 +27,7 @@ namespace SummerInternRegistration.Migrations
                     SEMESTERTERM = table.Column<string>(nullable: true),
                     SEMESTERYEAR = table.Column<string>(nullable: true),
                     ACADEMICCREDITSEMESTER = table.Column<string>(nullable: true),
-                    PACADEMICCREDITYEAR = table.Column<string>(nullable: true),
+                    ACADEMICCREDITYEAR = table.Column<string>(nullable: true),
                     COLLEGEGRADUATIONSEMESTER = table.Column<string>(nullable: true),
                     COLLEGEGRADUATIONYEAR = table.Column<string>(nullable: true),
                     FNAMEPROF = table.Column<string>(nullable: true),

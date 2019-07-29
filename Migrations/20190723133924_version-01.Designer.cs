@@ -69,7 +69,7 @@ namespace SummerInternRegistration.Migrations
 
                     b.Property<string>("NOTES");
 
-                    b.Property<string>("PACADEMICCREDITYEAR");
+                    b.Property<string>("ACADEMICCREDITYEAR");
 
                     b.Property<string>("PMNAME");
 

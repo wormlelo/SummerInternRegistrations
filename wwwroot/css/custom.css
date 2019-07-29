@@ -1,0 +1,266 @@
+﻿@charset "UTF-8";
+/* Custom CSS For Dashboard */
+
+body {
+    padding-top: 65px;
+    background-color: #f7f9fc;
+}
+
+blockquote div.container-fluid {
+    border: 1px solid rgb(0,91,168);
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+}
+
+    blockquote div.container-fluid h3 {
+        border-bottom: 2px solid rgb(228,161,27);
+        padding-bottom: 5px;
+    }
+
+    blockquote div.container-fluid:active, blockquote div.container-fluid:focus, blockquote div.container-fluid:hover {
+        background-color: rgb(254,250,243);
+    }
+
+div.btn-group {
+    margin-bottom: 10px;
+}
+
+a {
+    color: #0033A0;
+    text-decoration: none;
+}
+
+.navbar-inverse {
+    background-image: -webkit-linear-gradient(top,#0033A0 0,#002C89 100%);
+    background-image: -o-linear-gradient(top,#0033A0 0,#002C89 100%);
+    background-image: -webkit-gradient(linear,left top,left bottom,from(#0033A0),to(#002C89));
+    background-image: linear-gradient(to bottom,#0033A0 0,#002C89 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff0033A0', endColorstr='#ff002C89', GradientType=0);
+    filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
+    background-repeat: repeat-x;
+    border-radius: 0px;
+}
+
+.navbar-inverse {
+    background-color: #002C89;
+    border-color: #001E5D;
+    box-shadow: 0 5px 5px rgba(0,0,0,.1);
+}
+
+    .navbar-inverse .navbar-brand {
+        color: #FFF;
+        background-image: url('/cp/images/ASU-FooterLogo-270.png');
+        background-repeat: no-repeat;
+        height: 60px;
+        margin-left: 10px !important;
+        padding-left: 280px;
+        margin-top: 5px;
+        font-size: 1.6em;
+        font-style: italic;
+        letter-spacing: 1px;
+    }
+
+    .navbar-inverse .navbar-nav > li > a {
+        color: #d2d2d2;
+    }
+
+.navbar-nav > li > a {
+    line-height: 32px;
+}
+
+.navbar-inverse .navbar-nav > li > a:focus, .navbar-inverse .navbar-nav > li > a:hover {
+    color: #fff;
+    background-color: #0003;
+    text-decoration: underline;
+}
+
+.nav-sidebar > .active > a, .nav-sidebar > .active > a:hover, .nav-sidebar > .active > a:focus {
+    color: #fff;
+    background-color: #0033A0;
+}
+
+.navbar-inverse .navbar-toggle {
+    border-color: #FFFFFF;
+}
+
+    .navbar-inverse .navbar-toggle:focus, .navbar-inverse .navbar-toggle:hover {
+        background-color: #FFFFFF;
+        border-color: #0033A0;
+        color: #0033A0;
+    }
+
+        .navbar-inverse .navbar-toggle:focus .icon-bar,
+        .navbar-inverse .navbar-toggle:hover .icon-bar {
+            background-color: #0033A0;
+        }
+
+.sidebar {
+    box-shadow: 5px 0 5px rgba(0,0,0,.05);
+}
+
+.footer {
+    border-top: 1px solid #eee;
+    box-shadow: 0 -5px 5px rgba(0,0,0,.05);
+}
+
+h1.page-header {
+    background: #FFF;
+    margin-top: -20px !important;
+    margin-left: -40px;
+    margin-right: -40px;
+    padding: inherit;
+}
+
+table, form, .chartjs-render-monitor {
+    background-color: #FCFCFC;
+    border: 1px solid #ddd;
+}
+
+    fieldset legend, form h4 {
+        padding-left: .5em;
+    }
+
+.closebtn {
+    display: none;
+}
+
+.openbtn {
+    display: none;
+}
+
+@media screen and (max-width: 767px) {
+    /* The sidebar menu */
+    .sidebar {
+        height: 100%; /* 100% Full-height */
+        width: 0; /* 0 width - change this with JavaScript */
+        position: fixed; /* Stay in place */
+        z-index: 1; /* Stay on top */
+        /*top: 0;*/
+        left: -30px;
+        background-color: #f5f5f5;
+        overflow-x: hidden; /* Disable horizontal scroll */
+        padding-top: 60px; /* Place content 60px from the top */
+        transition: 0.5s; /* 0.5 second transition effect to slide in the sidebar */
+        display: block !important;
+    }
+
+        /* The sidebar links */
+        .sidebar a {
+            padding: 8px 8px 8px 32px;
+            text-decoration: none;
+            display: block;
+            transition: 0.3s;
+        }
+
+            /* When you mouse over the navigation links, change their color */
+            .sidebar a:hover {
+                /*color: #f1f1f1;*/
+            }
+
+        /* Position and style the close button (top right corner) */
+        .sidebar .closebtn {
+            display: block;
+            position: absolute;
+            top: 0;
+            right: 25px;
+            font-size: 36px;
+            margin-left: 50px;
+        }
+
+    /* The button used to open the sidebar */
+    .openbtn {
+        font-size: 20px;
+        cursor: pointer;
+        background-color: #002C89;
+        color: white;
+        padding: 10px 15px;
+        border: none;
+        display: block;
+        width: 100%;
+    }
+
+        .openbtn:hover {
+            background-color: #001E5D;
+        }
+
+    /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+    #main {
+        transition: margin-left .5s; /* If you want a transition effect */
+        padding: 20px;
+    }
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+    .openbtn {
+        display: block;
+    }
+
+    .sidebar {
+        padding-top: 40px;
+    }
+
+        .sidebar a {
+            font-size: 18px;
+        }
+
+        .sidebar .closebtn {
+            padding-top: 0px;
+        }
+}
+
+@media screen and (max-width: 767px) {
+    h1.page-header {
+        margin-right: -20px;
+        padding-left: 50px;
+    }
+}
+
+@media screen and (max-width: 1062px) {
+    .navbar-inverse .navbar-brand {
+        background-image: url('/images/logos/FlameIconWhite-56x55.png');
+        padding-left: 70px;
+    }
+}
+
+@media (max-width:851px) and (min-width:768px) {
+    .navbar-inverse .navbar-brand {
+        text-indent: -9999px;
+    }
+}
+
+@media print {
+    .sidebar, footer, #mainSidebar, .footer {
+        display: none !important;
+    }
+
+    #main, .main {
+        margin-left: 0 !important;
+        width: 100% !important;
+    }
+}
+/* formStyle*/
+.navbar-inverse {
+    background-image: -webkit-linear-gradient(top,#11173E 0,#0A0D23 100%);
+    background-image: -o-linear-gradient(top,#11173E 0,#0A0D23 100%);
+    background-image: -webkit-gradient(linear,left top,left bottom,from(#11173E),to(#0A0D23));
+    background-image: linear-gradient(to bottom,#11173E 0,#0A0D23 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff11173E', endColorstr='#ff0A0D23', GradientType=0);
+    filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
+    background-repeat: repeat-x;
+    border-radius: 0px;
+}
+
+.navbar-inverse {
+    background-color: #0A0D23;
+    border-color: #080808;
+}
+
+    .navbar-inverse .navbar-brand, .navbar-inverse .navbar-nav > li > a {
+        text-shadow: 0 -1px 0 rgba(0,0,0,.25);
+    }
+
+    .navbar-inverse .navbar-brand {
+        color: #F8F6F9;
+        font-weight: bold;
+    }

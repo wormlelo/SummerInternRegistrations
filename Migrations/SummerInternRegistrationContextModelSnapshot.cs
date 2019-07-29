@@ -27,6 +27,8 @@ namespace SummerInternRegistration.Migrations
 
                     b.Property<string>("ACADEMICCREDITSEMESTER");
 
+                    b.Property<string>("ACADEMICCREDITYEAR");
+
                     b.Property<string>("BACKGROUNDCHECK");
 
                     b.Property<string>("CLASSIFICATION");
@@ -66,8 +68,6 @@ namespace SummerInternRegistration.Migrations
                     b.Property<string>("MOBILE");
 
                     b.Property<string>("NOTES");
-
-                    b.Property<string>("PACADEMICCREDITYEAR");
 
                     b.Property<string>("PMNAME");
 
